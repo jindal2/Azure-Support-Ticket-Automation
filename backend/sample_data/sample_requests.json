@@ -1,0 +1,37 @@
+[
+  {
+    "ticket_id": "BILL-001",
+    "customer_message": "I was charged twice for the same subscription.",
+    "description": "Standard billing inquiry with double charge report."
+  },
+  {
+    "ticket_id": "TECH-001",
+    "customer_message": "The application crashes whenever I upload a PDF.",
+    "description": "Specific technical defect causing application crash."
+  },
+  {
+    "ticket_id": "ACC-001",
+    "customer_message": "I cannot reset my password and access my account.",
+    "description": "Identity and access issue with password reset failure."
+  },
+  {
+    "ticket_id": "GEN-001",
+    "customer_message": "Could you explain the available subscription plans?",
+    "description": "General customer inquiry regarding plan options."
+  },
+  {
+    "ticket_id": "AMB-001",
+    "customer_message": "Payment went through yesterday but my account is locked and I cannot sign in to check the billing receipt.",
+    "description": "Ambiguous multi-domain ticket blending Billing and Access signals, requiring human review."
+  },
+  {
+    "ticket_id": "CRIT-001",
+    "customer_message": "CRITICAL OUTAGE: Entire production service is down, all users are receiving 500 errors across all endpoints.",
+    "description": "Widespread system outage overriding normal flow to CRITICAL priority and NEEDS_REVIEW status."
+  },
+  {
+    "ticket_id": "SEC-001",
+    "customer_message": "URGENT: Suspected security breach, unauthorized logins detected from unfamiliar foreign IP addresses.",
+    "description": "Suspected security incident triggering CRITICAL priority and cautious automated response draft."
+  }
+]

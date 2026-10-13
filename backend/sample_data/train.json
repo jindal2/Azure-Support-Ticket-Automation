@@ -1,0 +1,182 @@
+[
+  {
+    "id": "TRAIN-001",
+    "message": "I was charged twice on my credit card for the monthly subscription.",
+    "category": "Billing"
+  },
+  {
+    "id": "TRAIN-002",
+    "message": "Can I get a copy of the VAT tax invoice for last month's payment?",
+    "category": "Billing"
+  },
+  {
+    "id": "TRAIN-003",
+    "message": "My invoice shows an unexpected charge of $49 that I didn't authorize.",
+    "category": "Billing"
+  },
+  {
+    "id": "TRAIN-004",
+    "message": "I cancelled my subscription three weeks ago but my creditcard was billed again.",
+    "category": "Billing"
+  },
+  {
+    "id": "TRAIN-005",
+    "message": "Need to update my payment method, the existing debit card has expired.",
+    "category": "Billing"
+  },
+  {
+    "id": "TRAIN-006",
+    "message": "Why did my monthly renewal fee increase from $29 to $49 without notice?",
+    "category": "Billing"
+  },
+  {
+    "id": "TRAIN-007",
+    "message": "Requesting a full refund because the yearly plan was purchased accidentally.",
+    "category": "Billing"
+  },
+  {
+    "id": "TRAIN-008",
+    "message": "My wire transfer went through but the account balance still shows payment overdue.",
+    "category": "Billing"
+  },
+  {
+    "id": "TRAIN-009",
+    "message": "Please fix billing discrepancy on transaction ref TX98234, charged twice.",
+    "category": "Billing"
+  },
+  {
+    "id": "TRAIN-010",
+    "message": "The application crashes immediately whenever I upload a PDF report.",
+    "category": "Technical"
+  },
+  {
+    "id": "TRAIN-011",
+    "message": "Receiving a 500 Internal Server Error when saving changes to the project settings.",
+    "category": "Technical"
+  },
+  {
+    "id": "TRAIN-012",
+    "message": "The web app is extremely slow and times out during data export.",
+    "category": "Technical"
+  },
+  {
+    "id": "TRAIN-013",
+    "message": "Encountering Unhandled Promise Rejection in the browser console on the analytics page.",
+    "category": "Technical"
+  },
+  {
+    "id": "TRAIN-014",
+    "message": "The dashboard widget is completely blank and fails to load charts.",
+    "category": "Technical"
+  },
+  {
+    "id": "TRAIN-015",
+    "message": "API endpoint /v1/records returns HTTP 502 Bad Gateway during peak queries.",
+    "category": "Technical"
+  },
+  {
+    "id": "TRAIN-016",
+    "message": "Mobile view is completely broken on iOS Safari, buttons overlap and are unclickable.",
+    "category": "Technical"
+  },
+  {
+    "id": "TRAIN-017",
+    "message": "Getting error code ERR_CONNECTION_RESET when attempting to submit customer forms.",
+    "category": "Technical"
+  },
+  {
+    "id": "TRAIN-018",
+    "message": "File export feature corrupts Excel XLSX files upon download.",
+    "category": "Technical"
+  },
+  {
+    "id": "TRAIN-019",
+    "message": "I forgot my password and the password reset link email is never delivered.",
+    "category": "Access"
+  },
+  {
+    "id": "TRAIN-020",
+    "message": "My account is locked out after three failed login attempts. Please unlock.",
+    "category": "Access"
+  },
+  {
+    "id": "TRAIN-021",
+    "message": "Two-factor authentication (2FA) SMS code is not arriving on my phone.",
+    "category": "Access"
+  },
+  {
+    "id": "TRAIN-022",
+    "message": "Need admin permissions granted for user sarah.jenkins@company.com.",
+    "category": "Access"
+  },
+  {
+    "id": "TRAIN-023",
+    "message": "Single Sign-On (SSO) with Okta fails with SAML response error.",
+    "category": "Access"
+  },
+  {
+    "id": "TRAIN-024",
+    "message": "Cannot sign in to my workspace, getting Invalid Credentials error repeatedly.",
+    "category": "Access"
+  },
+  {
+    "id": "TRAIN-025",
+    "message": "Please reset my Google Authenticator MFA device as I lost my smartphone.",
+    "category": "Access"
+  },
+  {
+    "id": "TRAIN-026",
+    "message": "New team member cannot access the engineering repository group.",
+    "category": "Access"
+  },
+  {
+    "id": "TRAIN-027",
+    "message": "Session expired error pops up constantly every 30 seconds after login.",
+    "category": "Access"
+  },
+  {
+    "id": "TRAIN-028",
+    "message": "Could you provide details on what features are included in the Enterprise plan?",
+    "category": "General"
+  },
+  {
+    "id": "TRAIN-029",
+    "message": "Where can I find the API documentation and developer tutorials?",
+    "category": "General"
+  },
+  {
+    "id": "TRAIN-030",
+    "message": "What are your standard support operating hours and phone contact numbers?",
+    "category": "General"
+  },
+  {
+    "id": "TRAIN-031",
+    "message": "We would like to request a demo call for our procurement team next Tuesday.",
+    "category": "General"
+  },
+  {
+    "id": "TRAIN-032",
+    "message": "Are you SOC2 Type II and GDPR compliant? Need security whitepaper.",
+    "category": "General"
+  },
+  {
+    "id": "TRAIN-033",
+    "message": "Do you offer discounts for non-profit organizations or universities?",
+    "category": "General"
+  },
+  {
+    "id": "TRAIN-034",
+    "message": "Looking for the company privacy policy and terms of service document.",
+    "category": "General"
+  },
+  {
+    "id": "TRAIN-035",
+    "message": "Can you share product roadmap information for upcoming integrations?",
+    "category": "General"
+  },
+  {
+    "id": "TRAIN-036",
+    "message": "General feedback: the new interface looks great, kudos to the team!",
+    "category": "General"
+  }
+]

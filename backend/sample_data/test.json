@@ -1,0 +1,82 @@
+[
+  {
+    "id": "TEST-001",
+    "message": "I was billed twice on my Mastercard for the pro tier subscription.",
+    "category": "Billing"
+  },
+  {
+    "id": "TEST-002",
+    "message": "Where can our accountant download the latest payment receipt with company tax ID?",
+    "category": "Billing"
+  },
+  {
+    "id": "TEST-003",
+    "message": "I submitted a subscription cancellation last week but was still charged this morning.",
+    "category": "Billing"
+  },
+  {
+    "id": "TEST-004",
+    "message": "Please refund the unauthorized renewal charge on account 88219.",
+    "category": "Billing"
+  },
+  {
+    "id": "TEST-005",
+    "message": "The software crashes with an unhandled exception when uploading large CSV files.",
+    "category": "Technical"
+  },
+  {
+    "id": "TEST-006",
+    "message": "Dashboard analytics page returns HTTP 504 Gateway Timeout intermittently.",
+    "category": "Technical"
+  },
+  {
+    "id": "TEST-007",
+    "message": "Our automated pipeline gets connection refused errors when invoking the REST API.",
+    "category": "Technical"
+  },
+  {
+    "id": "TEST-008",
+    "message": "The web page screen freezes when rendering tables with more than 50 rows.",
+    "category": "Technical"
+  },
+  {
+    "id": "TEST-009",
+    "message": "I am locked out of my corporate profile and the password reset token has expired.",
+    "category": "Access"
+  },
+  {
+    "id": "TEST-010",
+    "message": "The two-factor authentication verification code is never received on my email address.",
+    "category": "Access"
+  },
+  {
+    "id": "TEST-011",
+    "message": "Need read and write permissions assigned to the new QA engineer on team Engineering.",
+    "category": "Access"
+  },
+  {
+    "id": "TEST-012",
+    "message": "Our company Okta SSO login is redirecting to an invalid credentials error page.",
+    "category": "Access"
+  },
+  {
+    "id": "TEST-013",
+    "message": "Can someone share the pricing comparison between Team and Enterprise tiers?",
+    "category": "General"
+  },
+  {
+    "id": "TEST-014",
+    "message": "What is the official procedure for requesting a vendor security compliance questionnaire?",
+    "category": "General"
+  },
+  {
+    "id": "TEST-015",
+    "message": "Do you provide live onboarding webinar sessions for new clients?",
+    "category": "General"
+  },
+  {
+    "id": "TEST-016",
+    "message": "Inquiring about upcoming regional user conferences and community meetups.",
+    "category": "General"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "scenario_id": "BILL-001",
+    "input_message": "I was charged twice for the same subscription.",
+    "expected_category": "Billing",
+    "expected_priority": "MEDIUM",
+    "expected_team": "Billing Support",
+    "review_required": false,
+    "initial_status": "PENDING_REVIEW",
+    "workflow_behavior": "Predicted as Billing with high confidence; assigned to Billing Support team; draft response template acknowledges double charge inquiry and requests invoice details without promising unauthorized refunds.",
+    "testing_value": "Validates core billing keyword classification and respectful response draft generation."
+  },
+  {
+    "scenario_id": "TECH-001",
+    "input_message": "The application crashes whenever I upload a PDF.",
+    "expected_category": "Technical",
+    "expected_priority": "MEDIUM",
+    "expected_team": "Technical Support",
+    "review_required": false,
+    "initial_status": "PENDING_REVIEW",
+    "workflow_behavior": "Predicted as Technical with high confidence; assigned to Technical Support team; draft response gathers crash logs, browser/OS version without asserting immediate bug fix.",
+    "testing_value": "Tests defect classification and software troubleshooting draft response generation."
+  },
+  {
+    "scenario_id": "ACC-001",
+    "input_message": "I cannot reset my password and access my account.",
+    "expected_category": "Access",
+    "expected_priority": "MEDIUM",
+    "expected_team": "Identity and Access Support",
+    "review_required": false,
+    "initial_status": "PENDING_REVIEW",
+    "workflow_behavior": "Predicted as Access with high confidence; assigned to Identity and Access Support; draft response guides user through self-service reset verification steps.",
+    "testing_value": "Verifies account recovery routing and security-compliant response templating."
+  },
+  {
+    "scenario_id": "GEN-001",
+    "input_message": "Could you explain the available subscription plans?",
+    "expected_category": "General",
+    "expected_priority": "LOW",
+    "expected_team": "Customer Support",
+    "review_required": false,
+    "initial_status": "PENDING_REVIEW",
+    "workflow_behavior": "Predicted as General with high confidence; assigned to Customer Support; priority assigned as LOW; draft response points to pricing documentation.",
+    "testing_value": "Tests low-priority routing and non-technical information request workflows."
+  },
+  {
+    "scenario_id": "AMB-001",
+    "input_message": "Payment went through yesterday but my account is locked and I cannot sign in to check the billing receipt.",
+    "expected_category": "Ambiguous (Billing/Access)",
+    "expected_priority": "HIGH",
+    "expected_team": "Billing Support or Identity and Access Support",
+    "review_required": true,
+    "initial_status": "NEEDS_REVIEW",
+    "workflow_behavior": "Model encounters conflicting domain features; uncertainty threshold or multi-label ambiguity flags ticket with NEEDS_REVIEW; draft response remains cautious.",
+    "testing_value": "Demonstrates system's safe failure handling: low-confidence or conflicting inputs are safely routed to human reviewers rather than making brittle assumptions."
+  },
+  {
+    "scenario_id": "CRIT-001",
+    "input_message": "CRITICAL OUTAGE: Entire production service is down, all users are receiving 500 errors across all endpoints.",
+    "expected_category": "Technical",
+    "expected_priority": "CRITICAL",
+    "expected_team": "Technical Support",
+    "review_required": true,
+    "initial_status": "NEEDS_REVIEW",
+    "workflow_behavior": "Deterministic critical outage rule overrides normal classification priority; sets priority to CRITICAL; forces review status to NEEDS_REVIEW regardless of ML confidence.",
+    "testing_value": "Ensures that deterministic safety policies always supersede machine learning predictions for critical business risks."
+  },
+  {
+    "scenario_id": "SEC-001",
+    "input_message": "URGENT: Suspected security breach, unauthorized logins detected from unfamiliar foreign IP addresses.",
+    "expected_category": "Access",
+    "expected_priority": "CRITICAL",
+    "expected_team": "Identity and Access Support",
+    "review_required": true,
+    "initial_status": "NEEDS_REVIEW",
+    "workflow_behavior": "Security rule flags ticket as CRITICAL; does NOT fabricate confirmation of a breach; assigns NEEDS_REVIEW for immediate human incident officer triage.",
+    "testing_value": "Validates ethical AI handling: security incidents are flagged for human review without falsely claiming confirmed breach in automated replies."
+  }
+]
