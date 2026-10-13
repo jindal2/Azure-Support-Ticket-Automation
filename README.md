@@ -26,7 +26,28 @@ When a customer submits a ticket:
 
 ---
 
-## 2. Core Feature Highlights
+## 2. Requirements Compliance & Traceability Matrix
+
+| Requirement Specification | Implemented In | Verification / Test Status |
+| :--- | :--- | :--- |
+| **30+ Labelled Fictional Tickets** (Billing, Technical, Access, General) | `backend/sample_data/train.json` (36 records) | Verified in `test_held_out_dataset_strict_separation` |
+| **Reserve at least 10 as Test Set** (Strictly separate) | `backend/sample_data/test.json` (16 records) | Verified out-of-sample; zero data leakage |
+| **State Priority Policy** (Critical, High, Medium, Low) | `backend/app/priority_service.py` & `docs/classification.md` | Verified in `test_priority.py` (6 tests) |
+| **Accept Ticket ID & Message; return Category, Priority, Team, Summary, Draft** | `POST /tickets` & `backend/app/schemas.py` | Verified in `test_tickets.py` (9 tests) |
+| **Classification Method & Uncertainty Routing** (<0.40 conf -> review) | `backend/app/classifier.py` (TF-IDF + Logistic Regression) | Verified in `test_classification.py` (5 tests) |
+| **Report Test-Set Accuracy** | `backend/scripts/evaluate_model.py` | **87.50% Out-of-sample Accuracy** (14/16 correct) |
+| **Reject Duplicates (HTTP 409) & Invalid Input (HTTP 422)** | `backend/app/routes/tickets.py` & Pydantic V2 | Verified in `test_duplicate_ticket_id_rejected` |
+| **Store Ticket State & Require Approval before READY** | `backend/app/ticket_service.py` (SQLite + SQLAlchemy) | Verified in `test_approvals.py` (5 tests) |
+| **No Real Email Sending Required** | Compliant response drafting engine | Zero outbound external SMTP/API calls |
+| **Backend & Frontend Dockerfiles + Docker Compose** | `backend/Dockerfile`, `frontend/Dockerfile`, `docker-compose.yml` | Multi-stage build & compose orchestration verified |
+| **Passing GitHub Actions CI Workflow** | `.github/workflows/ci.yml` | Executes pytest, ML eval, & Vite build |
+| **Manually Triggered Azure OIDC Deployment Workflow** | `.github/workflows/deploy-azure.yml` | `workflow_dispatch` + Azure OIDC token exchange |
+| **Document Azure Settings without Committing Secrets** | `docs/azure-plan.md` & `.env.example` | Zero secrets in repo; complete Azure plan |
+| **Demonstration Scenarios Preset & Script** | `docs/demo-script.md` & React 1-click presets | 5 core scenarios verified in live UI |
+
+---
+
+## 3. Core Feature Highlights
 
 - **Lightweight scikit-learn ML Baseline:** Fully local TF-IDF Vectorizer + Logistic Regression pipeline achieving **87.5% out-of-sample accuracy** on held-out test data.
 - **Calibrated Uncertainty Detection:** Low confidence (<0.40) or narrow prediction margins (<0.10) automatically flag tickets for human triage.
